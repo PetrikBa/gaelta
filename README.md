@@ -1,2 +1,2 @@
 # gaelta
-test answears
+riesenia a odpovede pripajam v konkretnych files a readme
