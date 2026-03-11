@@ -2,7 +2,6 @@ Tu som trosku googlil + AI lebo nemam konkretnu skusenost ale tiez by som si s t
 
 ## 🚀 1. Postup napojenia (Workflow)
 
-1)
 a)Treba nakonfugurovat webhook/trigger. V adm nastavim webhook na udalost order:create, aktivujem async trigger. Cielovu url zadam endpoint skriptu. Triger posle pri kazdej objednavke http post request s json payload.
 
 b)Prijem a autentifikacia. Scriptom zachytim post request. Zvalidujem HMAC podpis v header. Overim ci data prisli zo shoptetu.
@@ -17,7 +16,6 @@ e)Zo skusenosti sme mali sem tam nejaku duplicitu v objednavke. Teoreticky by sm
 
 ## 📊 2. Struktura reportovanych dat
 
-2)
 Order ID / Number: unikatne ID prodktu/ov
 Datum a cas: Kedy objednavka vznikla.
 Zoznam produktov (SKU, nazov, mnozstvo): Aby napr v sklade vedeli, co balit.
@@ -29,7 +27,6 @@ Zľavový kód: aby si marketing zmeral pripadnu kampan
 
 ## 🛠 3. Pouzite nastroje a pristup
 
-3)
 Odpourca sa pouzit Make.com.
 a)Rychle pouzitie, pretoze ma shoptet moduly, aj google sheet, netreba riesit vlastnu autentizaciu pre google
 
