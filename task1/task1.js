@@ -2,7 +2,7 @@ for (var i = 0; i < dataLayer.length; i++) {
     var item = dataLayer[i];
 
     if (item[0] === 'event' && item[1] === 'page_view' && item[2] && item[2].content_group === 'category') {
-
+    //pripadne neriesti dataLayer ale shoptet.view.type === 'category', ak by vypadol pri AJAX nacitaniac
         var products = document.querySelectorAll('#products .product');
 
         // pomocna funkcia pre buyBtns
