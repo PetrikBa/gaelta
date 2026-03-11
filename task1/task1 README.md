@@ -1,6 +1,6 @@
 # 🚀 Shoptet Task Solution
 
-Vybral som si jeden z vasich eshopov a vyrobil som script, ktory renderuje vsetky upravy z tohoto bodu. Uobil som to stylom, akym so zvyknuty, myslim ze by sa vam to mohlo pacit. Bolo to super, po dlhej dobe vanilla js, bavilo ma to. Kod sa da sazmorejme rozdelit do tematickych blokov, ja to mam v jednom. Staci to vloit na stranku kategorie. Napr https://www.andyhoauto.sk/udrzba-okien/
+Vybral som si jeden z vasich eshopov a vyrobil som script, ktory renderuje vsetky upravy z tohoto bodu. Uobil som to stylom, akym so zvyknuty, myslim ze by sa vam to mohlo pacit. Bolo to super, po dlhej dobe vanilla js, bavilo ma to. Kod sa da sazmozrejme rozdelit do tematickych blokov, ja to mam v jednom. Staci to vlozit na stranku kategorie. Napr https://www.andyhoauto.sk/udrzba-okien/
 
 ---
 
