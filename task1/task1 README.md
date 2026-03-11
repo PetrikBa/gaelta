@@ -15,18 +15,16 @@ Cely kod by sa mal spustat v momente kedy je DOM plne pripraveny.
 Ako uz viete, nemam skusenosti so shoptetom ale malo by to ist medzi scripty, patral som a zistil som ze priblizne sem:
 ADM -> Vzhľad a obsah -> Editor vzhľadu -> HTML kód - > Vlozit do sekcie paticka (pred koncovým tagom </body>). Tym by malo byt zaistene, ze cela struktura stranky (produkty, ceny, obrazky) su uz nacitane a je globalne platny. Obalil by som ho do znacky <script>
 
-### Bod č. 3: Optimalizácia cez CSS
-Ak by klient chcel menit len vizual (skryvanie buyBtn), cistejsie riesenie pre bod c. 3 by bolo vlozit doplnkove CSS do zálozky 'Vlastné CSS', ale moj script je komplexnym riesenim, ktore pokryva vsetky tri body naraz v ramci jednej logiky. Vlozit ako <style> do hlavicky.
+### Bod č. 3: Optimalizácia cez CSS - skryvanie buyBtn
+Ak by klient chcel menit len vizual, cistejsie riesenie pre bod 3 by bolo vlozit doplnkove CSS do zálozky 'Vlastné CSS', ale moj script je komplexnym riesenim, ktore pokryva vsetky tri body naraz v ramci jednej logiky. Vlozit ako <style> do hlavicky.
 
 ```css
-/* Skrytie tlačidiel košíka v predvolenom stave */
 .product .p-tools {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-/* Zobrazenie po nabehnutí myšou (hover) */
 .product:hover .p-tools {
   opacity: 1;
   visibility: visible;
@@ -36,6 +34,3 @@ Ak by klient chcel menit len vizual (skryvanie buyBtn), cistejsie riesenie pre b
   z-index: 10;
   position: relative;
 }
-
-
-

@@ -29,10 +29,10 @@ for (var i = 0; i < dataLayer.length; i++) {
                 toggleProductBuyBtn(this, false);
             });
 
-            // Novinka badge funkcionalita - pouzivam exstujuci element z webu aby som nerozbil design, nie je zeleny, dufam ze neva, ak ano mozem zmenit color
+            // Novinka badge funkcionalita - pouzivam exstujuci element, skryvam aj 'Detail' aj 'Do kosika'
             if (el.getAttribute('data-is-older-than-30-days') === 'false') {
                 var flagsContainer = el.querySelector('.flags');
-                var spanHtml = '<span class="flag flag-new" style="background-color:#fbfd62">Novinka</span>';
+                var spanHtml = '<span class="flag flag-new" style="background-color:#009901; color:white">Novinka</span>';
 
                 if (flagsContainer) {
                     flagsContainer.insertAdjacentHTML('beforeend', spanHtml);
@@ -53,7 +53,7 @@ for (var i = 0; i < dataLayer.length; i++) {
 
 				// pre vybrany eshop som si dovolil hranicu posunut, pevne verim ze ma vyhodnocovatel testu za to neukrizuje
                 if (!isNaN(priceNum) && priceNum < 15) {
-                    var shippingInfo = '<p style="font-size: 12px; color: #666; margin-top: 5px;">🚚 Doprava zadarmo nad 50 €</p>';
+                    var shippingInfo = '<p style="font-size: 12px; color: #666; margin-top: 5px;">🚚 Doprava zadarmo nad 15 €</p>';
                     priceEl.insertAdjacentHTML('afterend', shippingInfo);
                 }
             }
